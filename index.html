@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>JSSample</title>
+<title>Azure Test Sample</title>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 </head>
 <body>
@@ -16,7 +16,7 @@
 
 
       $.ajax({
-         headers: {"Access-Control-Allow-Origin": "some value"},
+         headers: {"Access-Control-Allow-Origin": "*"},
          url: 'https://splgroup.azure-api.net/document/?' + $.param(params),
          type: 'GET',
       })
