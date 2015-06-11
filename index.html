@@ -16,7 +16,7 @@
 
 
       $.ajax({
-        
+         headers: {"Access-Control-Allow-Origin": "some value"},
          url: 'https://splgroup.azure-api.net/document/?' + $.param(params),
          type: 'GET',
       })
