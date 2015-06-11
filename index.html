@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Azure Calc Test 2 Sample</title>
+<title>Azure Calc Test 3 Sample</title>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 </head>
 <body>
@@ -16,7 +16,10 @@
 
 
       $.ajax({
-         headers: {"Access-Control-Allow-Origin": "*"},
+         headers: { 
+        Accept : "text/plain; charset=utf-8",
+        "Content-Type": "text/plain; charset=utf-8"
+    },
          url: 'https://splgroup.azure-api.net/calc/add?a=1&b=2?' + $.param(params),
          type: 'GET',
          crossDomain: true,
